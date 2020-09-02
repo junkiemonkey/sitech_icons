@@ -1,0 +1,192 @@
+@import "src/scss/base/variables";
+@import "src/scss/base/mixins";
+#icon-2 {
+  background-color: #03579A;
+  .all {
+    @include trans(all $transition-time-long);
+  }
+  .fill {
+    @include trans(fill $transition-time-long);
+  }
+  .stroke {
+    @include trans(stroke $transition-time-long);
+  }
+  .a, .b, .e {
+    fill: none;
+    stroke-miterlimit: 22.93;
+  }
+
+  .a {
+    stroke: #003a69;
+    @include trans(stroke $transition-time-long);
+  }
+
+  .a, .e {
+    stroke-width: 0.96px;
+  }
+
+  .b, .e {
+    stroke: #1989d0;
+  }
+
+  .b {
+    stroke-linecap: round;
+    stroke-width: 2.4px;
+  }
+
+  .c, .d {
+    fill: #1989d0;
+  }
+
+  .d {
+    fill-rule: evenodd;
+  }
+
+  .borders {
+    &-fill {
+      transform: translateX(-1%);
+      @include trans(opacity $transition-time-long);
+      opacity: 0;
+    }
+  }
+  .clip-number {
+    rect {
+      x: 90;
+      y: 112;
+      @include trans(all $transition-time-long ease);
+    }
+  }
+  .percent {
+    &-symbol {
+      transform-origin: 74% 66%;
+      transition-delay: $transition-time-long;
+    }
+    &-number {
+      transform: translateX(-1%);
+      clip-path: url(#number);
+      path {
+        //@include trans(all $transition-time-long ease $transition-time-long);
+        //transform: translateY(26px);
+      }
+    }
+  }
+  .clip-cat {
+    rect {
+      y: 33;
+      x: 58;
+    }
+  }
+  .cat {
+    transform: translateX(-1.3%);
+    clip-path: url(#cat);
+    &-word {
+      transition-delay: 0s;
+      transform: translateY(22px);
+    }
+  }
+  .triang {
+    transition-delay: $transition-time-long;
+    transform-origin: 51% 30%;
+  }
+  .cross {
+    transform-origin: 6% 31%;
+  }
+  .symbol {
+    .active {
+      transform: translateX(-1%);
+    }
+    .circle {
+      transform-origin: 25.5% 71.5%
+    }
+    .line {
+
+      //stroke-dasharray: 10.5%;
+      //stroke-dashoffset: 2.9%;
+      //transform-origin: 13.5% 0%;
+      &.hor-1 {
+        transform-origin: 8.5% 0%;
+        transform: translate3d(12.2%, 70.6%, 0) scale(0, 1);
+        transition-delay: 0s;
+      }
+      &.hor-2 {
+        transform-origin: 0% 0%;
+        transform: translate3d(30%, 70.6%, 0) scale(0, 1);
+        transition-delay: 0s;
+      }
+    }
+    .vert {
+      transform: translate3d(37px, 86px, 0) scale(1, 0);
+      transform-origin: 50% 13.5%;
+      transition-delay: 0s;
+    }
+  }
+}
+
+#icon-2:hover {
+  .borders {
+    &-fill {
+      opacity: 1;
+    }
+    &-stroke {
+      .a {
+        stroke: $black;
+      }
+    }
+  }
+  .clip-number {
+    rect {
+      y: 85;
+      transition-delay: $transition-time-long;
+    }
+  }
+  .lines {
+    .b {
+      stroke: $yellow;
+    }
+  }
+  .cross {
+    transform: rotate(-45deg) translateX(5px);
+    .fill {
+      fill: $yellow;
+    }
+  }
+  .triang {
+    transform: translateY(6px) scale(0.9);
+    transition-delay: 0s;
+    .all {
+      fill: $yellow;
+    }
+  }
+  .cat {
+    &-word {
+      transition-delay: $transition-time-long;
+      transform: translateY(0);
+    }
+  }
+  .percent {
+    &-symbol {
+      fill: #fff;
+      transform: translateY(11%) scale(0.65);
+      transition-delay: 0s;
+    }
+  }
+  .symbol {
+    .circle {
+      transform: scale(1.2);
+      stroke: $white;
+    }
+    .vert {
+      transform: translate3d(37px, 86px, 0) scale(1, 1);
+      transition-delay: $transition-time-long;
+    }
+    .hor-1 {
+      transform: translate3d(12.2%, 70.6%, 0) scale(1, 1);
+      transition-delay: $transition-time-long;
+    }
+    .hor-2 {
+      transform: translate3d(29.9%, 70.6%, 0) scale(1, 1);
+      transition-delay: $transition-time-long;
+    }
+  }
+
+}

@@ -1,0 +1,157 @@
+@import "src/scss/base/variables";
+@import "src/scss/base/mixins";
+#icon-3 {
+  background-color: #03579A;
+  .all {
+    @include trans(all $transition-time-long);
+  }
+  .fill {
+    @include trans(fill $transition-time-long);
+  }
+  .stroke {
+    @include trans(stroke $transition-time-long);
+  }
+  .a {
+    fill: #0d4d82;
+  }
+
+  .a, .b, .f {
+    fill-rule: evenodd;
+  }
+
+  .a, .b {
+    opacity: 0.5;
+  }
+
+  .b {
+    fill: #2071b3;
+  }
+
+  .c, .d, .e, .g, .h {
+    fill: none;
+    stroke-miterlimit: 22.93;
+  }
+
+  .c, .d {
+    stroke: #003a69;
+  }
+
+  .c, .d, .h {
+    stroke-width: 0.96px;
+  }
+
+  .d, .e, .g {
+    stroke-linecap: round;
+  }
+
+  .e, .g, .h {
+    stroke: #1989d0;
+  }
+
+  .e {
+    stroke-width: 2.4px;
+  }
+
+  .f {
+    fill: #1989d0;
+  }
+
+  .g {
+    stroke-width: 0.96px;
+  }
+  .h {
+    transform-origin: 50% 50%;
+  }
+  .circle {
+    transform-origin: 50.3% 50%;
+    animation: rotate 3s linear infinite forwards paused;
+  }
+  .pin {
+    transform: scale(0);
+    transform-origin: 50.3% 50%;
+  }
+  .path {
+    &-top {
+      stroke-dasharray: 22px;
+      stroke-dashoffset: -22px;
+      transition-timing-function: linear;
+      transition-delay: .8s + $transition-time;
+    }
+    &-down {
+      stroke-dasharray: 6px;
+      stroke-dashoffset: 6px;
+      transition-duration: $transition-time;
+      transition-timing-function: linear;
+      transition-delay: .8s;
+    }
+    &-bottom {
+      stroke-dasharray: 66px;
+      stroke-dashoffset: -66px;
+      transition-duration: .8s;
+      transition-timing-function: linear;
+      transition-delay: 0s;
+    }
+    &-dot {
+      transform: scale(0);
+      transform-origin: 79% 79%;
+      transition-delay: 0s;
+    }
+  }
+}
+
+#icon-3:hover {
+  .d, .map .c {
+    stroke: $black;
+  }
+
+  .g {
+    stroke: $yellow;
+  }
+
+  .h {
+    transform: translate3d(0, -14%, 0) scale(0.8);
+    stroke: $yellow;
+    opacity: 0.7;
+  }
+
+  .f {
+    fill: $yellow;
+  }
+
+  .path {
+    &-top {
+      stroke-dashoffset: 0;
+      transition-delay: 0s;
+    }
+    &-down {
+      transition-delay: $transition-time-long;
+      stroke-dashoffset: 0;
+    }
+    &-bottom {
+      transition-delay: $transition-time-long + $transition-time;
+      stroke-dashoffset: 0;
+    }
+    &-dot {
+      transform: scale(1);
+      transition-delay: $transition-time-long + $transition-time + .8s;
+    }
+  }
+
+  .pin {
+    //transition-delay: $transition-time;
+    transform: scale(1);
+  }
+
+  .circle {
+    animation-play-state: running;
+    .e {
+      stroke: yellow;
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

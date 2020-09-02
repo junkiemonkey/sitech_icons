@@ -1,0 +1,52 @@
+@import "src/scss/base/variables";
+@import "src/scss/base/mixins";
+#icon-5 {
+  background-color: #03579A;
+
+  .all {
+    @include trans(all $transition-time-long);
+  }
+
+  .fill {
+    @include trans(fill $transition-time-long);
+  }
+
+  .stroke {
+    @include trans(stroke $transition-time-long);
+  }
+  .a {
+    fill: #2071b3;
+    opacity: 0.5;
+  }
+
+  .a, .d, .g {
+    fill-rule: evenodd;
+  }
+
+  .b, .c, .e {
+    fill: none;
+    stroke-miterlimit: 22.93;
+  }
+
+  .b, .e {
+    stroke: #003a69;
+    stroke-width: 0.96px;
+  }
+
+  .b, .c {
+    stroke-linecap: round;
+  }
+
+  .c {
+    stroke: #1989d0;
+    stroke-width: 2.4px;
+  }
+
+  .d, .h {
+    fill: #1989d0;
+  }
+
+  .f, .g {
+    fill: #133e73;
+  }
+}
