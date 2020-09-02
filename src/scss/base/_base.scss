@@ -2,14 +2,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #03579A;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
   margin: auto;
   .icon {
-    background-color: #03579A;
-    width: 100%;
+    //background-color: #03579A;
+    width: 50%;
     flex-shrink: 0;
     padding: 20px;
   }
