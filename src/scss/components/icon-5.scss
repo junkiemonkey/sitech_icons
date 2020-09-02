@@ -31,6 +31,7 @@
   .b, .e {
     stroke: #003a69;
     stroke-width: 0.96px;
+    @include trans(stroke $transition-time-long);
   }
 
   .b, .c {
@@ -44,9 +45,103 @@
 
   .d, .h {
     fill: #1989d0;
+    @include trans(fill $transition-time-long);
   }
 
   .f, .g {
     fill: #133e73;
+  }
+  .circle {
+    transform-origin: 49% 49%;
+    animation: rotate 3s linear infinite forwards paused;
+  }
+  .signal {
+    .s1 {
+      r: 0px;
+      //@include ;
+      //animation: signalOut 2.5s linear;
+    }
+    .s2 {
+      r: 0px;
+      //animation: signalOut 2.5s linear;
+    }
+  }
+  .dot {
+    transform: translate3d(8px, 0, 0) scale(1);
+    transform-origin: 3% 11%;
+  }
+  .cross-1 {
+    transform-origin: 7% 11%;
+    transform: scale(0.3);
+  }
+  .cross-2 {
+    transform: scale(1, 0);
+    transform-origin: 0 82.5%;
+  }
+}
+
+#icon-5:hover {
+  .e, .b {
+    stroke: $black;
+  }
+  .circle {
+    animation-play-state: running;
+    .c {
+      stroke: $yellow;
+    }
+  }
+  .z {
+    fill: $yellow;
+  }
+  .dot {
+    transform: translate3d(8px, 0, 0) scale(0.5);
+  }
+  .cross-1 {
+    transform: scale(1);
+    rect {
+      fill: $yellow;
+    }
+  }
+  .cross-2 {
+    transform: scale(1, 1);
+    fill: $yellow;
+  }
+  .bot-part {
+    fill: #fff;
+  }
+  .signal {
+    .s1 {
+      animation: signal 2.5s linear infinite forwards;
+    }
+    .s2 {
+      animation: signal 2.5s linear 1.25s infinite forwards;
+    }
+  }
+
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes signal {
+  0% {
+    r: 0px;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    r: 16px;
+    opacity: 0;
+  }
+}
+
+@keyframes signalOut {
+  100% {
+    r: 0px;
   }
 }
