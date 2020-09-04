@@ -1,0 +1,188 @@
+@import "src/scss/base/variables";
+@import "src/scss/base/mixins";
+#icon-6 {
+  background-color: #03579A;
+
+  .all {
+    @include trans(all $transition-time-long);
+  }
+
+  .fill {
+    @include trans(fill $transition-time-long);
+  }
+
+  .stroke {
+    @include trans(stroke $transition-time-long);
+  }
+  .a {
+    fill: #2071b3;
+    opacity: 0.5;
+  }
+
+  .a, .e {
+    fill-rule: evenodd;
+  }
+
+  .b, .c, .d, .f {
+    fill: none;
+    stroke-miterlimit: 22.93;
+  }
+
+  .b, .c {
+    stroke: #003a69;
+  }
+
+  .b, .d, .f {
+    stroke-linecap: round;
+  }
+
+  .b {
+    stroke-width: 0.96px;
+  }
+
+  .c {
+    stroke-width: 0.96px;
+  }
+
+  .d, .f {
+    stroke: #1989d0;
+  }
+
+  .d {
+    stroke-width: 1.2px;
+  }
+
+  .e {
+    fill: #1989d0;
+  }
+
+  .f {
+    stroke-width: 2.4px;
+  }
+  .mech {
+    .c {
+      @include trans(stroke $transition-time-long);
+    }
+  }
+  .circle {
+    transform-origin: 43.4% 50%;
+    animation: rotate 3s linear infinite forwards paused;
+  }
+  .select {
+    stroke-dasharray: 67px;
+    stroke-dashoffset: -67px;
+    transition-delay: $transition-time-long;
+  }
+  .line {
+    stroke-dasharray: 77px;
+    stroke-dashoffset: 77px;
+    transition-delay: 0s;
+  }
+  .legend {
+    &-1 {
+      rect {
+        transform: scale(0, 1);
+        transform-origin: 89.2% 0;
+      }
+    }
+    &-2 {
+      rect {
+        transform: scale(0, 1);
+        transform-origin: 87.5% 0;
+      }
+    }
+  }
+  .dot {
+    transform-origin: 3.7% 9.3%;
+    transform: translateX(1px) scale(1);
+  }
+  .cross {
+    transform-origin: 4.4% 9.4%;
+    transform: scale(0.5);
+  }
+}
+
+#icon-6:hover {
+  .dot {
+    transform: translateX(1px) scale(.3);
+    fill: $yellow;
+  }
+  .cross {
+    transform: scale(1);
+  }
+  .b, .c {
+    stroke: $black;
+  }
+  .circle {
+    animation-play-state: running;
+    .f {
+      stroke: $yellow;
+    }
+  }
+  .select {
+    stroke-dashoffset: 0;
+    transition-delay: 0s;
+  }
+  .line {
+    transition-delay: $transition-time-long;
+    stroke-dashoffset: 0;
+  }
+  .legend {
+    &-1 {
+      .d {
+        stroke: $black;
+      }
+      .bar {
+        &-1 {
+          animation: equalizer 1.4s ease-in infinite forwards alternate;
+        }
+        &-2 {
+          animation: equalizer 1.25s ease-in 0.4s infinite forwards alternate;
+        }
+        &-3 {
+          animation: equalizer 1.8s ease-in infinite forwards alternate;
+        }
+        &-4 {
+          animation: equalizer 1.1s ease-in 0.3s infinite forwards alternate;
+        }
+        &-5 {
+          animation: equalizer 1.5s ease-in infinite forwards alternate;
+        }
+        &-6 {
+          animation: equalizer 1.3s ease-in infinite forwards alternate;
+        }
+      }
+    }
+    &-2 {
+      rect {
+
+      }
+      .bar {
+        &-1 {
+          animation: equalizer 1.1s ease-in infinite forwards alternate;
+          animation-delay: $transition-time-long + $transition-time + 0.4s;
+        }
+        &-2 {
+          animation: equalizer 1.25s ease-in infinite forwards alternate;
+          animation-delay: $transition-time-long + $transition-time + 0.1s;
+        }
+        &-3 {
+          animation: equalizer 1.5s ease-in infinite forwards alternate;
+          animation-delay: $transition-time-long + $transition-time - 0.1s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes equalizer {
+  100% {
+    transform: scale(1, 1);
+  }
+}

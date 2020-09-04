@@ -120,6 +120,22 @@
       transition-delay: 0s;
     }
   }
+
+  .equalizer {
+    .bar {
+      @include trans(transform $transition-time-long);
+      transform: scale(0, 1);
+      &-1 {
+        transform-origin: 81% 0;
+      }
+      &-2 {
+        transform-origin: 81% 0;
+      }
+      &-3 {
+        transform-origin: 81% 0;
+      }
+    }
+  }
 }
 
 #icon-2:hover {
@@ -189,4 +205,24 @@
     }
   }
 
+  .equalizer {
+    .bar {
+      &-1 {
+        animation: equalizer 1.4s ease-in infinite forwards alternate;
+      }
+      &-2 {
+        animation: equalizer 1.2s ease-in infinite forwards alternate;
+      }
+      &-3 {
+        animation: equalizer 1.45s ease-in 0.5s infinite forwards alternate;
+      }
+    }
+  }
+
+}
+
+@keyframes equalizer {
+  100% {
+    transform: scale(1, 1);
+  }
 }

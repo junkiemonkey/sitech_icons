@@ -14,6 +14,7 @@ module.exports = {
     'icons-3': './src/scss/components/icon-3.scss',
     'icons-4': './src/scss/components/icon-4.scss',
     'icons-5': './src/scss/components/icon-5.scss',
+    'icons-6': './src/scss/components/icon-6.scss',
   },
   output: {
     filename: "js/[name].bundle.js",

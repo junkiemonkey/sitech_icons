@@ -56,11 +56,21 @@
     transform: scale(0.4);
   }
 
-  .g {
-    //stroke-width: 18px;
-    //stroke-dasharray: 15px;
-    stroke-width: 2.4px;
+  .g{
+    fill:none;
+    stroke:#1989D0;
+    stroke-width:2.4;
+    stroke-linecap:round;
+    stroke-miterlimit:22.9256;
+    @include trans(all $transition-time-long);
   }
+
+  .circle {
+    transform-origin: 49.8% 50%;
+    animation: rotate 3s linear infinite forwards paused;
+  }
+
+
   .arcs {
     transform-origin: 50% 50%;
     display: none;
@@ -92,6 +102,7 @@
       }
     }
   }
+
 }
 
 #icon-4:hover {
@@ -104,6 +115,19 @@
     fill: $yellow;
     transform: scale(0.1);
   }
+  .g {
+    stroke-linecap: butt;
+    stroke-width: 16;
+    &-1 {
+      stroke: #133e73;
+    }
+    &-2 {
+      stroke: $yellow;
+    }
+    &-3 {
+
+    }
+  }
   .cross {
     transform: scale(1);
     fill: $yellow;
@@ -115,6 +139,9 @@
     .black {
       fill: $black;
     }
+  }
+  .circle {
+    animation-play-state: running;
   }
   .comp {
     .display {
@@ -135,5 +162,12 @@
         stroke-dashoffset: -26px;
       }
     }
+  }
+}
+
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
 }
