@@ -111,10 +111,10 @@
   }
   .signal {
     .s1 {
-      animation: signal 2.5s linear infinite forwards;
+      animation: radio 2.5s linear infinite forwards;
     }
     .s2 {
-      animation: signal 2.5s linear 1.25s infinite forwards;
+      animation: radio 2.5s linear 1.25s infinite forwards;
     }
   }
 
@@ -126,7 +126,7 @@
   }
 }
 
-@keyframes signal {
+@keyframes radio {
   0% {
     r: 0px;
     opacity: 1;
@@ -140,8 +140,3 @@
   }
 }
 
-@keyframes signalOut {
-  100% {
-    r: 0px;
-  }
-}

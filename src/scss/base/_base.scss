@@ -9,11 +9,11 @@ body {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
   margin: auto;
   .icon {
     //background-color: #03579A;
-    width: 50%;
+    width: 25%;
     flex-shrink: 0;
     padding: 20px;
   }

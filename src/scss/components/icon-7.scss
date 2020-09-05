@@ -1,0 +1,202 @@
+@import "src/scss/base/variables";
+@import "src/scss/base/mixins";
+#icon-7 {
+  background-color: #03579A;
+
+  .all {
+    @include trans(all $transition-time-long);
+  }
+
+  .fill {
+    @include trans(fill $transition-time-long);
+  }
+
+  .stroke {
+    @include trans(stroke $transition-time-long);
+  }
+  .a, .j {
+    fill: #2071b3;
+  }
+
+  .a, .b, .f, .h {
+    fill-rule: evenodd;
+  }
+
+  .a {
+    opacity: 0.5;
+  }
+
+  .b, .c {
+    fill: #1989d0;
+  }
+
+  .d, .e, .g, .i, .k, .l, .m {
+    fill: none;
+    stroke-miterlimit: 22.93;
+  }
+
+  .d, .e, .i {
+    stroke: #003a69;
+    @include trans(stroke $transition-time-long);
+  }
+
+  .d, .g {
+    stroke-linecap: round;
+  }
+
+  .d, .e, .l {
+    stroke-width: 0.96px;
+  }
+
+  .f {
+    fill: #133e73;
+  }
+
+  .g, .k, .l {
+    stroke: #1989d0;
+  }
+
+  .m {
+    stroke: white;
+    transition-duration: $transition-time-long * 2;
+    transition-delay: $transition-time;
+    &-1 {
+      stroke-dasharray: 103px;
+      stroke-dashoffset: -103px;
+    }
+    &-2 {
+      stroke-dasharray: 55px;
+      stroke-dashoffset: 55px;
+    }
+  }
+
+  .lines {
+    .x {
+      transition-delay: $transition-time-long * 2;
+    }
+  }
+
+  .g {
+    stroke-width: 2.4px;
+  }
+
+  .h {
+    fill: #003a69;
+  }
+
+  .i, .k {
+    stroke-width: 0.96px;
+  }
+  .circle {
+    transform-origin: 48.47% 49.44%;
+    animation: rotate 3s linear infinite forwards paused;
+  }
+  .mech {
+    //opacity: 0;
+  }
+  .satel {
+    .center {
+      opacity: 0;
+    }
+    .b {
+      transform: translate(0, 2px);
+    }
+    .wing {
+      &-l {
+        transform: scale(0.8, 0) skew(-9deg, -80deg) rotate(26deg);
+        transform-origin: 93% 16%;
+        opacity: 0;
+      }
+      &-r {
+        transform: scale(0.8, 0) skew(-9deg, -80deg) rotate(26deg);
+        transform-origin: 87% 8%;
+        opacity: 0;
+      }
+    }
+  }
+  .signal {
+    path {
+      //transform-origin: 85% 17%;
+      opacity: 0;
+    }
+  }
+}
+
+#icon-7:hover {
+  .d, .e, .i, .k {
+    stroke: $black;
+  }
+  .h {
+    fill: $black;
+  }
+  .cab, .c {
+    fill: $yellow;
+  }
+  .circle {
+    animation-play-state: running;
+    .g {
+      stroke: $yellow;
+    }
+  }
+  .satel {
+    .center {
+      opacity: 1;
+    }
+    .b {
+      fill: $black;
+    }
+  }
+  .wing {
+    &-l, &-r {
+      transition-duration: $transition-time-long * 3;
+      transform: scale(1, 1) skew(0deg, 0deg) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  .signal {
+    .s-1 {
+      animation: signal 2.8s linear $transition-time-long infinite forwards;
+    }
+    .s-2 {
+      animation: signal 2.8s linear $transition-time-long + .6s infinite forwards;
+    }
+    .s-3 {
+      animation: signal 2.8s linear $transition-time-long + 1.2s infinite forwards;
+    }
+  }
+  .lines {
+    .b {
+      fill: #fff;
+    }
+    .m {
+      stroke-dashoffset: 0;
+    }
+    .z {
+      transition-delay: $transition-time-long * 2;
+    }
+    .x {
+      transition-delay: 0s;
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes signal {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+}
