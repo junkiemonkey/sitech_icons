@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Icons</title>
-<link href="css/main.css?954da9d2ed7ff03d3944" rel="stylesheet"><link href="css/icons-1.css?954da9d2ed7ff03d3944" rel="stylesheet"><link href="css/icons-2.css?954da9d2ed7ff03d3944" rel="stylesheet"><link href="css/icons-3.css?954da9d2ed7ff03d3944" rel="stylesheet"><link href="css/icons-4.css?954da9d2ed7ff03d3944" rel="stylesheet"><link href="css/icons-5.css?954da9d2ed7ff03d3944" rel="stylesheet"><link href="css/icons-6.css?954da9d2ed7ff03d3944" rel="stylesheet"><link href="css/icons-7.css?954da9d2ed7ff03d3944" rel="stylesheet"><link href="css/icons-8.css?954da9d2ed7ff03d3944" rel="stylesheet"></head>
+<link href="css/main.css?024cbe8a245c7cc8701e" rel="stylesheet"><link href="css/icons-1.css?024cbe8a245c7cc8701e" rel="stylesheet"><link href="css/icons-2.css?024cbe8a245c7cc8701e" rel="stylesheet"><link href="css/icons-3.css?024cbe8a245c7cc8701e" rel="stylesheet"><link href="css/icons-4.css?024cbe8a245c7cc8701e" rel="stylesheet"><link href="css/icons-5.css?024cbe8a245c7cc8701e" rel="stylesheet"><link href="css/icons-6.css?024cbe8a245c7cc8701e" rel="stylesheet"><link href="css/icons-7.css?024cbe8a245c7cc8701e" rel="stylesheet"><link href="css/icons-8.css?024cbe8a245c7cc8701e" rel="stylesheet"></head>
 <body>
 <div class="wrapper">
   <div class="icon">
@@ -77,10 +77,24 @@
     <clipPath id="cat" class="clip-cat">
       <rect width="39.5" height="22" />
     </clipPath>
+    <clipPath id="side">
+      <polygon points="73.1,43.9 93.3,41 92.3,38.3 69.9,38.3"/>
+    </clipPath>
+    <mask id="t-mask">
+      <polyline class="inside" points="74.72,12.03 101.4,27.44 101.4,58.24 74.72,73.7 48.04,58.24 48.04,27.44 74.72,12.03" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" />
+    </mask>
+    <mask id="r-mask">
+      <polyline points="111.34,75.4 138.02,90.86 138.02,121.67 111.34,137.08 84.66,121.67 84.66,90.86 111.34,75.4" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" />
+    </mask>
+    <mask id="l-mask">
+      <polyline points="38.1,75.4 64.78,90.86 64.78,121.67 38.1,137.08 11.42,121.67 11.42,90.86 38.1,75.4" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+    </mask>
   </defs>
   <g>
+
     <g class="borders">
       <g class="borders-fill">
+
         <path d="M39.57,71.63l15,8.66,15,8.66v34.64l-15,8.66-15,8.66-15-8.66-15-8.66V89l15-8.66Zm0-7.65L57.88,74.55,76.19,85.13v42.28L57.88,138,39.57,148.56,21.26,138,3,127.41V85.13L21.26,74.55Z" fill="#2071b3" fill-rule="evenodd" opacity="0.5"/>
         <path d="M76.19,8.2l15,8.66,15,8.66V60.16l-15,8.66-15,8.66-15-8.66-15-8.66V25.52l15-8.66Zm0-7.65L94.5,11.13,112.81,21.7V64L94.5,74.55,76.19,85.13,57.88,74.55,39.57,64V21.7L57.88,11.13Z" fill="#2071b3" fill-rule="evenodd" opacity="0.5"/>
         <path d="M112.81,71.63l15,8.66,15,8.66v34.64l-15,8.66-15,8.66-15-8.66-15-8.66V89l15-8.66Zm0-7.65,18.31,10.57,18.31,10.58v42.28L131.12,138l-18.31,10.58L94.5,138,76.19,127.41V85.13L94.5,74.55Z" fill="#2071b3" fill-rule="evenodd" opacity="0.5"/>
@@ -96,9 +110,17 @@
     </g>
 
     <g class="lines">
-      <polyline class="b stroke  b-1" points="48.04 42.84 48.04 27.44 61.38 19.73 74.72 12.03 88.06 19.73 101.4 27.44 101.4 42.84 101.4 58.24"/>
-      <polyline class="b stroke" points="138.02 90.86 138.02 106.27 138.02 121.67 124.68 129.38 111.34 137.08 98 129.38 84.66 121.67"/>
-      <polyline class="b stroke" points="64.78 90.86 64.78 106.27 64.78 121.67 51.44 129.38 38.1 137.08 24.76 129.38 11.42 121.67 11.42 106.27 11.42 90.86 24.76 83.16"/>
+      <g class="top-f">
+        <polyline class="b stroke circle b-1" points="48.04,42.84 48.04,27.44 61.38,19.73 74.72,12.03  101.4,27.44 101.4,58.24"/>
+      </g>
+
+      <g class="right-f">
+        <polyline class="b stroke circle b-2" points="138.02 90.86 138.02 106.27 138.02 121.67 124.68 129.38 111.34 137.08 98 129.38 84.66 121.67"/>
+      </g>
+
+      <g class="left-f">
+        <polyline class="b stroke circle b-3" points="64.78 90.86 64.78 106.27 64.78 121.67 51.44 129.38 38.1 137.08 24.76 129.38 11.42 121.67 11.42 106.27 11.42 90.86 24.76 83.16"/>
+      </g>
     </g>
 
     <g class="percent">
@@ -109,16 +131,24 @@
     </g>
 
     <g class="cat">
-      <g class="cat-word all">
-        <path d="M69.35,51a2.64,2.64,0,0,0,.92-2.19v-3H66v4.14A1.07,1.07,0,0,1,65,51a1,1,0,0,1-1-1.08V38.17a1,1,0,0,1,1-1.07A1.07,1.07,0,0,1,66,38.17v4.17h4.24V38c0-2.39-1.55-4.36-5.35-4.37s-5.37,2-5.37,4.37V50.28a4.15,4.15,0,0,0,4.28,4.16h1.32Z" fill="#fefefe"/>
-        <polygon points="86.11 51.5 86.11 38.03 83.18 38.03 83.18 34.06 93.8 34.06 93.8 38.03 90.85 38.03 90.85 54.42 89.59 54.42 86.11 51.5" fill="#fefefe"/>
-        <path d="M76.53,43.41h0l1.15-5.87,1.14,5.87Zm4.1-9.33H74.7L71.25,49.61l6.43-5.2L84.38,50Z" fill="#fefefe"/>
-        <path d="M95.88,35h0c.21,0,.26-.1.26-.21s0-.17-.23-.17h-.28V35Zm-.25.23h0v.65H95.4V34.38h.48c.27,0,.55.07.55.41a.34.34,0,0,1-.3.35h0c.2,0,.23.14.25.3a2.2,2.2,0,0,0,.09.43h-.3c0-.09,0-.18,0-.27s0-.24-.08-.31-.13-.06-.22-.07Zm1.31-.08h0a1,1,0,0,0-2.09,0,1,1,0,1,0,2.09,0Zm-2.31,0a1.27,1.27,0,1,1,1.27,1.27A1.27,1.27,0,0,1,94.63,35.14Z" fill="#fefefe"/>
+      <g class="car">
+        <rect x="41.8" y="2.9" class="st14" width="8.6" height="0.6"/>
+        <rect x="46.6" y="0.2" class="st14" width="2.8" height="0.6"/>
+        <rect x="49.1" y="6.3" class="st14" width="2.8" height="0.6"/>
+        <path class="st14" d="M20.3,13.2c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1
+		C17.1,14.6,18.5,13.2,20.3,13.2 M39.4,13.2c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1
+		C36.3,14.6,37.7,13.2,39.4,13.2z M39.4,10.6c3.2,0,5.8,2.6,5.8,5.7c0,3.2-2.6,5.8-5.8,5.8c-3.2,0-5.7-2.6-5.7-5.8
+		C33.7,13.2,36.2,10.6,39.4,10.6z M12.3,0l9.5,0.1l6.1,10.2l20.7-2.9L48.8,8l-4.9,0.8l-2,1.8c-0.8-0.3-1.6-0.5-2.5-0.5
+		c-3.5,0-6.3,2.8-6.3,6.3c0,0.1,0,0.2,0,0.3L33,17.2l-5.7,0l-1-2.4c-0.7-2.7-3.2-4.7-6.1-4.7c-3.4,0-6.1,2.7-6.3,6l-0.5,0l-2.1,0.5
+		H8.9l1.4-7.1h0.9L12.3,7h1.3l2.1-3.9h5L24,8.9h1L21,2h-8.7V0z M15.8,3.6h4.7l1.3,3.1h-7.4L15.8,3.6z M20.3,10.6
+		c3.2,0,5.7,2.6,5.7,5.7c0,3.2-2.6,5.8-5.7,5.8c-3.2,0-5.8-2.6-5.8-5.8C14.5,13.2,17.1,10.6,20.3,10.6z"/>
+        <polygon class="st14" points="45.8,0.4 22.6,0.2 27.1,7.6 36.6,7.8 48.3,6.7"/>
       </g>
-    </g>
 
-    <g class="triang all">
-      <polygon class="c all" points="87.81 49.35 75.66 39.13 63.06 49.35 87.81 49.35"/>
+      <g class="side">
+        <polygon class="st7 all" points="73.1,43.9 93.3,41 93.3,38.5 69.9,38.5" stroke="#03579A" stroke-width="0.5"/>
+      </g>
+
     </g>
 
     <g class="cross all">
@@ -126,7 +156,7 @@
     </g>
 
     <g class="symbol">
-      <path class="e circle all" d="M38.1,100.12a6.15,6.15,0,0,1,6.15,6c0,.05,0,.11,0,.16a6.15,6.15,0,1,1-12.31,0v-.07A6.15,6.15,0,0,1,38.1,100.12Z"/>
+      <path class="e circ all" d="M38.1,100.12a6.15,6.15,0,0,1,6.15,6c0,.05,0,.11,0,.16a6.15,6.15,0,1,1-12.31,0v-.07A6.15,6.15,0,0,1,38.1,100.12Z"/>
       <line class="vert line all" stroke-miterlimit="22.93" stroke-width="0.96" x1="1" y1="1" x2="1" y2="39.7" stroke="#fefefe" />
       <line class="hor-1 line all" x1="1" y1="1" x2="12.5" y2="1" stroke-miterlimit="22.93" stroke-width="0.96" stroke="#fefefe" />
       <line class="hor-2 line all" x1="1" y1="1" x2="12.5" y2="1" stroke-miterlimit="22.93" stroke-width="0.96" stroke="#fefefe" />
@@ -572,5 +602,5 @@
   </div>
 </div>
 
-<script src="js/main.bundle.js?954da9d2ed7ff03d3944"></script><script src="js/icons-1.bundle.js?954da9d2ed7ff03d3944"></script><script src="js/icons-2.bundle.js?954da9d2ed7ff03d3944"></script><script src="js/icons-3.bundle.js?954da9d2ed7ff03d3944"></script><script src="js/icons-4.bundle.js?954da9d2ed7ff03d3944"></script><script src="js/icons-5.bundle.js?954da9d2ed7ff03d3944"></script><script src="js/icons-6.bundle.js?954da9d2ed7ff03d3944"></script><script src="js/icons-7.bundle.js?954da9d2ed7ff03d3944"></script><script src="js/icons-8.bundle.js?954da9d2ed7ff03d3944"></script></body>
+<script src="js/main.bundle.js?024cbe8a245c7cc8701e"></script><script src="js/icons-1.bundle.js?024cbe8a245c7cc8701e"></script><script src="js/icons-2.bundle.js?024cbe8a245c7cc8701e"></script><script src="js/icons-3.bundle.js?024cbe8a245c7cc8701e"></script><script src="js/icons-4.bundle.js?024cbe8a245c7cc8701e"></script><script src="js/icons-5.bundle.js?024cbe8a245c7cc8701e"></script><script src="js/icons-6.bundle.js?024cbe8a245c7cc8701e"></script><script src="js/icons-7.bundle.js?024cbe8a245c7cc8701e"></script><script src="js/icons-8.bundle.js?024cbe8a245c7cc8701e"></script></body>
 </html>
