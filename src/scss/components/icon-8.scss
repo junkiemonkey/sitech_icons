@@ -1,0 +1,211 @@
+@import "src/scss/base/variables";
+@import "src/scss/base/mixins";
+#icon-8 {
+  background-color: #03579A;
+
+  .all {
+    @include trans(all $transition-time-long);
+  }
+
+  .fill {
+    @include trans(fill $transition-time-long);
+  }
+
+  .stroke {
+    @include trans(stroke $transition-time-long);
+  }
+  .a {
+    fill: #2071b3;
+    opacity: 0.5;
+  }
+
+  .a, .b, .g {
+    fill-rule: evenodd;
+  }
+
+  .b, .i {
+    fill: #1989d0;
+  }
+
+  .c, .d, .f {
+    fill: none;
+    stroke-miterlimit: 22.93;
+  }
+
+  .c, .f {
+    stroke: #003a69;
+    @include trans(stroke $transition-time-long);
+  }
+
+  .c, .d {
+    stroke-linecap: round;
+  }
+
+  .c {
+    stroke-width: 0.96px;
+  }
+
+  .d {
+    stroke: #1989d0;
+    stroke-width: 2.4px;
+  }
+
+  .e {
+    fill: #003a69;
+    @include trans(all $transition-time-long);
+  }
+
+  .f {
+    stroke-width: 0.57px;
+
+  }
+
+  .g {
+    fill: #133e73;
+  }
+
+  .h {
+    fill: #1164a7;
+  }
+  .circle {
+    transform-origin: 49.4% 50%;
+    animation: rotate 3s linear infinite forwards paused;
+  }
+  .screen {
+    .loader {
+      transform-origin: 30.8% 0;
+      animation: loading 6s ease-out infinite forwards paused;
+    }
+    .text {
+      &-clip {
+        clip-path: url(#screen-text);
+      }
+      .e {
+        transform: scale(0, 1);
+      }
+    }
+  }
+  .cross {
+    &-1 {
+      rect {
+        @include trans(fill $transition-time-long);
+      }
+      transform: scale(0.5) rotate(45deg);
+      transform-origin: 5% 8%;
+    }
+    &-2 {
+      .all {
+        transform-origin: 78.71% 0;
+        transform: scale(0, 1);
+      }
+    }
+    &-3 {
+      transform-origin: 92.7% 87.3%;
+      transform: scale(0.5);
+    }
+  }
+  .dot {
+    transform-origin: 92.7% 87.3%;
+  }
+
+}
+
+#icon-8:hover {
+  .f, .c {
+    stroke: $black;
+  }
+  .e {
+    fill: $black;
+  }
+  .pad {
+    fill: $yellow;
+  }
+  .loader {
+    fill: $yellow;
+  }
+  .circle {
+    animation-play-state: running;
+    .d {
+      stroke: $yellow;
+    }
+  }
+  .screen {
+    .loader {
+      animation-play-state: running;
+    }
+    .text {
+      animation: text 4.15s linear 4.2s infinite forwards;
+      .e {
+        animation: text-type 4.15s ease infinite forwards;
+        @for $i from 0 through 11 {
+          &-#{$i + 1} {
+            animation-delay: $i * 0.7s;
+          }
+        }
+
+      }
+    }
+  }
+  .dot {
+    transform: scale(0.2);
+    fill: $yellow;
+  }
+  .cross {
+    &-1 {
+      transform: rotate(0deg) scale(1);
+      rect {
+        fill: $yellow;
+      }
+    }
+    &-2 {
+      .i {
+        fill: $yellow;
+      }
+      .all {
+        transform: scale(1, 1);
+      }
+    }
+    &-3 {
+      transform: scale(1);
+      .i {
+        fill: $yellow;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -18px, 0);
+  }
+}
+
+@keyframes text-type {
+  0% {
+    transform: scale(0, 1);
+  }
+  20% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
