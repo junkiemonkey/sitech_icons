@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.73 158.06" id="icon-7">
+    <defs>
+        <style>
+            #icon-7{background-color:#03579a}#icon-7 .all{backface-visibility:hidden;transition:all .6s}#icon-7 .fill{backface-visibility:hidden;transition:fill .6s}#icon-7 .stroke{backface-visibility:hidden;transition:stroke .6s}#icon-7 .a,#icon-7 .j{fill:#2071b3}#icon-7 .a,#icon-7 .b,#icon-7 .f,#icon-7 .h{fill-rule:evenodd}#icon-7 .a{opacity:.5}#icon-7 .b,#icon-7 .c{fill:#1989d0}#icon-7 .d,#icon-7 .e,#icon-7 .g,#icon-7 .i,#icon-7 .k,#icon-7 .l,#icon-7 .m{fill:none;stroke-miterlimit:22.93}#icon-7 .d,#icon-7 .e,#icon-7 .i{stroke:#003a69;backface-visibility:hidden;transition:stroke .6s}#icon-7 .d,#icon-7 .g{stroke-linecap:round}#icon-7 .d,#icon-7 .e,#icon-7 .l{stroke-width:.96px}#icon-7 .f{fill:#133e73}#icon-7 .g,#icon-7 .k,#icon-7 .l{stroke:#1989d0}#icon-7 .m{stroke:#fff;transition-duration:1.2s;transition-delay:.3s}#icon-7 .m-1{stroke-dasharray:103px;stroke-dashoffset:-103px}#icon-7 .m-2{stroke-dasharray:55px;stroke-dashoffset:55px}#icon-7 .lines .x{transition-delay:1.2s}#icon-7 .g{stroke-width:2.4px}#icon-7 .h{fill:#003a69}#icon-7 .i,#icon-7 .k{stroke-width:.96px}#icon-7 .circle{transform-origin:48.47% 49.44%;animation:rotate 3s linear infinite forwards paused}#icon-7 .satel .center{opacity:0}#icon-7 .satel .b{transform:translate(0, 2px)}#icon-7 .satel .wing-l{transform:scale(0.8, 0) skew(-9deg, -80deg) rotate(26deg);transform-origin:93% 16%;opacity:0}#icon-7 .satel .wing-r{transform:scale(0.8, 0) skew(-9deg, -80deg) rotate(26deg);transform-origin:87% 8%;opacity:0}#icon-7 .signal path{opacity:0}#icon-7:hover .d,#icon-7:hover .e,#icon-7:hover .i,#icon-7:hover .k{stroke:#001c33}#icon-7:hover .h{fill:#001c33}#icon-7:hover .cab,#icon-7:hover .c{fill:#fcaf2e}#icon-7:hover .circle{animation-play-state:running}#icon-7:hover .circle .g{stroke:#fcaf2e}#icon-7:hover .satel .center{opacity:1}#icon-7:hover .satel .b{fill:#001c33}#icon-7:hover .wing-l,#icon-7:hover .wing-r{transition-duration:1.8s;transform:scale(1, 1) skew(0deg, 0deg) rotate(0deg);opacity:1}#icon-7:hover .signal .s-1{animation:signal 2.8s linear .6s infinite forwards}#icon-7:hover .signal .s-2{animation:signal 2.8s linear 1.2s infinite forwards}#icon-7:hover .signal .s-3{animation:signal 2.8s linear 1.8s infinite forwards}#icon-7:hover .lines .b{fill:#fff}#icon-7:hover .lines .m{stroke-dashoffset:0}#icon-7:hover .lines .z{transition-delay:1.2s}#icon-7:hover .lines .x{transition-delay:0s}@keyframes rotate{100%{transform:rotate(360deg)}}@keyframes signal{0%{opacity:0}10%{opacity:1}50%{opacity:1}60%{opacity:0}}
+
+        </style>
+    </defs>
+    <a href="https://sitech.kz/ru/catalog/oblachnye-servisy-dlya-sistem-3d-nivelirovaniya-na-tehniku/">
+    <g>
+        <path class="a" d="M91,20A58.07,58.07,0,1,1,33,78,58.07,58.07,0,0,1,91,20M91,.48A77.55,77.55,0,1,1,13.48,78,77.55,77.55,0,0,1,91,.48Z"/>
+        <g class="satel">
+            <path class="b fill" d="M171.34,16.13a2.1,2.1,0,1,0-.18,3,2.1,2.1,0,0,0,.18-3m2.74-2.43a5.77,5.77,0,1,0-.49,8.14A5.77,5.77,0,0,0,174.08,13.7Z"/>
+
+            <g class="active">
+
+                <g class="wing-l all">
+                    <polygon points="177.21 22.28 184.54 25.9 179.74 30.15 172.41 26.54 177.21 22.28" fill="none" stroke="#001c33" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.96"/>
+                    <polygon points="187.25 33.61 184.54 25.9 179.74 30.15 182.44 37.87 187.25 33.61" fill="none" stroke="#001c33" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.96"/>
+                </g>
+                <g class="wing-r all">
+                    <polygon points="157.9 0.48 165.23 4.09 160.43 8.35 153.1 4.73 157.9 0.48" fill="none" stroke="#001c33" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.96"/>
+                    <polygon points="167.94 11.81 165.23 4.09 160.43 8.35 163.13 16.07 167.94 11.81" fill="none" stroke="#001c33" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.96"/>
+                </g>
+
+                <g class="signal">
+                    <path class="s-1" d="M160.37,18.24A9.49,9.49,0,0,0,169.1,29" fill="none" stroke="#fcaf2e" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="0.96"/>
+                    <path class="s-2" d="M156.93,17.77a13,13,0,0,0,11.92,14.68" fill="none" stroke="#fcaf2e" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="0.96"/>
+                    <path class="s-3" d="M153.49,17.3a16.44,16.44,0,0,0,15.12,18.62" fill="none" stroke="#fcaf2e" stroke-linecap="round" stroke-miterlimit="22.93" stroke-width="0.96"/>
+                </g>
+
+                <path class="center all" d="M171.34,18.14a2.1,2.1,0,1,0-.18,3,2.1,2.1,0,0,0,.18-3" fill="#fff" fill-rule="evenodd"/>
+            </g>
+        </g>
+
+        <g class="cross">
+            <rect class="c fill" x="13.16" y="4.92" width="2.89" height="15.68"/>
+            <rect class="c fill" x="6.77" y="11.31" width="15.68" height="2.89"/>
+        </g>
+
+        <path class="d" d="M91,20A58.07,58.07,0,1,1,33,78,58.07,58.07,0,0,1,91,20ZM91,.48A77.55,77.55,0,1,1,13.48,78,77.55,77.55,0,0,1,91,.48Z"/>
+
+        <g class="bg">
+            <path class="b" d="M35,62.86C40.6,59.69,47.74,55,48.72,53.57c1.12-1.64,8.81-8.5,10.48-6.79,2.27,2.32,16.27,14.41,18.64,13C82.9,56.92,84.41,52,91.35,49c5.4-2.33,4.61,2.68,13.06,6.48,12.56,5.64,4.91-4.1,13.52,3.5,1.94,1.71,20.5,8.58,16.62,11.13-6.54,4.29-5.59,3.61-10.21,7.71H90.62L88.83,73.5H76.45l-.73,4.32H33A58.13,58.13,0,0,1,35,62.86Z"/>
+            <path class="e" d="M35,62.86C40.6,59.69,47.74,55,48.72,53.57c1.12-1.64,8.81-8.5,10.48-6.79,2.27,2.32,16.27,14.41,18.64,13C82.9,56.92,84.41,52,91.35,49c5.4-2.33,4.61,2.68,13.06,6.48,12.56,5.64,4.91-4.1,13.52,3.5,1.94,1.71,20.5,8.58,16.62,11.13-6.54,4.29-5.59,3.61-10.21,7.71H90.62L88.83,73.5H76.45l-.73,4.32H33A58.13,58.13,0,0,1,35,62.86Z"/>
+            <path class="f" d="M144.42,55.16c-1.93.15-22,4.33-22.51,6.62-1.12,5.34-14.58-1.55-15-.58-5.38,12.32-37.41,6.52-37.25,10.62.12,3-27.54-7.37-27.81-7.75s-3.57-.91-6.89-1.15a58.12,58.12,0,0,0-2,14.9H75.72l.73-4.32H88.83l1.79,4.32H149.1A57.87,57.87,0,0,0,144.42,55.16Z"/>
+            <path class="e" d="M144.42,55.16c-1.93.15-22,4.33-22.51,6.62-1.12,5.34-14.58-1.55-15-.58-5.38,12.32-37.41,6.52-37.25,10.62.12,3-27.54-7.37-27.81-7.75s-3.57-.91-6.89-1.15a58.12,58.12,0,0,0-2,14.9H75.72l.73-4.32H88.83l1.79,4.32H149.1A57.87,57.87,0,0,0,144.42,55.16Z"/>
+        </g>
+
+        <g class="mech">
+            <path class="h fill" d="M79.17,89.6H99.31a4.79,4.79,0,0,1,4.47,3.09H107V78.24h3.46l4.47,20.92H107V95.38h-3a4.79,4.79,0,0,1-4.67,3.78H79.17a4.79,4.79,0,0,1-4.78-4.78h0A4.79,4.79,0,0,1,79.17,89.6Z"/>
+            <path class="i" d="M79.17,89.6H99.31a4.79,4.79,0,0,1,4.47,3.09H107V78.24h3.46l4.47,20.92H107V95.38h-3a4.79,4.79,0,0,1-4.67,3.78H79.17a4.79,4.79,0,0,1-4.78-4.78h0A4.79,4.79,0,0,1,79.17,89.6Z"/>
+            <path class="b cab fill" d="M104.28,90.33a6.41,6.41,0,0,0-5-2.37H93.87v-2.3l-1.32-3.18h8.34v-3.4h-.8V76.4h3.18v2.68h-.8v3.4h3.18v7.85Z"/>
+            <path class="i" d="M104.28,90.33a6.41,6.41,0,0,0-5-2.37H93.87v-2.3l-1.32-3.18h8.34v-3.4h-.8V76.4h3.18v2.68h-.8v3.4h3.18v7.85Z"/>
+            <path class="b cab fill" d="M82.11,75.14H77.84L76,85.8V87a8,8,0,0,1,3.12-.63h2.95ZM92.23,86.32V86l-4.5-10.84h-4.6V86.32ZM93.87,88v-2.3l-5-12.16H76.45l-2,12.16v4.43A6.41,6.41,0,0,1,79.17,88Z"/>
+            <path class="i" d="M82.11,75.14H77.84L76,85.8V87a8,8,0,0,1,3.12-.63h2.95ZM92.23,86.32V86l-4.5-10.84h-4.6V86.32ZM93.87,88v-2.3l-5-12.16H76.45l-2,12.16v4.43A6.41,6.41,0,0,1,79.17,88Z"/>
+            <circle class="j" cx="79.18" cy="94.38" r="3.74"/>
+            <circle class="k stroke" cx="79.18" cy="94.38" r="3.74"/>
+            <circle class="j" cx="98.9" cy="94.38" r="3.74"/>
+            <circle class="k stroke" cx="98.9" cy="94.38" r="3.74"/>
+        </g>
+
+        <g class="circle">
+            <path class="g stroke" d="M138.51,104.85a54.53,54.53,0,1,1-20.65-74.3"/>
+        </g>
+        <g class="lines">
+            <polyline class="l" points="2.11 44.7 102.15 73 145.83 32.41"/>
+            <polyline class="m all m-1" points="2.11,44.7 102.15,73"/>
+            <polyline class="m all m-2" points="102.15,73 145.83,32.41"/>
+            <path class="b fill x" d="M102.15,70.89A2.11,2.11,0,1,1,100,73a2.11,2.11,0,0,1,2.11-2.11"/>
+            <path class="b fill z" d="M2.11,42.59A2.11,2.11,0,1,1,0,44.7a2.11,2.11,0,0,1,2.11-2.11"/>
+            <path class="b fill z" d="M143.78,31a3.36,3.36,0,1,1-3.36,3.36A3.36,3.36,0,0,1,143.78,31"/>
+        </g>
+
+    </g>
+    </a>
+</svg>
